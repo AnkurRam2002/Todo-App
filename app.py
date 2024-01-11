@@ -51,9 +51,6 @@ def edit(sno):
     todo = Todo.query.filter_by(sno=sno).first()
     return render_template('edit.html', todo=todo)
     
-    
-
-
 with app.app_context():
     db.create_all()
 
